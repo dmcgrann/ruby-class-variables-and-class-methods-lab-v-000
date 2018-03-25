@@ -28,7 +28,7 @@ class Song
 
   def self.genre_count
     @@genres.each do |k,v|
-      k[v] = v.sort!
+      k[v] = v.sort
     end
   end
 
