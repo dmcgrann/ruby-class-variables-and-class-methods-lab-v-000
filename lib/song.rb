@@ -28,7 +28,7 @@ class Song
 
   def self.genre_count
     @@genres.group_by{ |k| k }.flat_map{ |k, v| {k => v.size} }
-    @@genres.sort
+    @@genres
   end
 
 end
