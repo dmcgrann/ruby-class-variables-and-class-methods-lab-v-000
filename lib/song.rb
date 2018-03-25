@@ -16,8 +16,8 @@ class Song
     @@count
   end
 
-  def artists
-    @@artists
+  def artists(self)
+    @@artists << self
   end
 
   def self.genre
