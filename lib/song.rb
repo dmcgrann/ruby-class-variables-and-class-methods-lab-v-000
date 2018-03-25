@@ -28,8 +28,7 @@ class Song
 
   def self.genre_count
     g = Hash.new
-    @@genres.each {|x| g[x] += 1}
-    x.uniq.each {|x| puts "#{x} #{g[x]}"} 
+    @@genres.uniq.each {|x| "#{g[x]}"} 
   end
 
 end
