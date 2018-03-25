@@ -27,7 +27,9 @@ class Song
   end
 
   def self.genre_count
-    @@genres.group_by{ |k| k }.flat_map{ |k, v| [k => v.size] }
+    g = Hash.new
+    @@genres.each {|x| g[x] += 1}
+    x.uniq.each {|x| puts "#{x} #{g[x]}"} 
   end
 
 end
