@@ -27,9 +27,9 @@ class Song
   end
 
   def self.genre_count
-    @@genres.each do |genre, i|
-      genre[i] ||= []
-      genre[i] << self
+    @@genres.each do |genre, x|
+      genre[x] ||= []
+      genre[x] << self
     end
   end
 
