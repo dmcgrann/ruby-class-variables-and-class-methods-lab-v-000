@@ -27,9 +27,7 @@ class Song
   end
 
   def self.genre_count
-    @@genres.each do |genre, x|
-      genre[x] << self
-    end
+    @@genres.group_by{ |v| v }.map{ |k, v| [k, v.size] }
   end
 
 end
