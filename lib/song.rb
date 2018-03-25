@@ -18,8 +18,8 @@ class Song
     @@count
   end
 
-  def self.artists(artist)
-    @@artists
+  def self.artists
+    @@artists.flatten
   end
 
   def self.genre
